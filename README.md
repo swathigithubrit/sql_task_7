@@ -18,12 +18,12 @@ This project demonstrates how to create and use SQL views in a library managemen
 
 We model a small Library Management System with:
 📑 Tables
-Books
-BookID (PK)
-Title
-Author
-Genre
-CopiesAvailable
+-Books
+-BookID (PK)
+-Title
+-Author
+-Genre
+-CopiesAvailable
 
     
 Members
@@ -42,17 +42,23 @@ Members
 📥 Sample Data
 
 ✅ Books
-BookID	Title	Author	Genre	CopiesAvailable
-1	The Great Gatsby	F. Scott Fitzgerald	Fiction	3
-2	1984	George Orwell	Dystopian	5
-3	To Kill a Mockingbird	Harper Lee	Classic	2
+| BookID | Title                 | Author              | Genre     | CopiesAvailable |
+| ------ | --------------------- | ------------------- | --------- | --------------- |
+| 1      | The Great Gatsby      | F. Scott Fitzgerald | Fiction   | 3               |
+| 2      | 1984                  | George Orwell       | Dystopian | 5               |
+| 3      | To Kill a Mockingbird | Harper Lee          | Classic   | 2               |
+
 
 ✅ Members
-MemberID	Name	Email	MembershipDate
-1	Alice Johnson	alice@example.com	2024-01-10
-2	Bob Smith	bob@example.com	2024-02-15
+| MemberID | Name          | Email                                         | MembershipDate |
+| -------- | ------------- | --------------------------------------------- | -------------- |
+| 1        | Alice Johnson | [alice@example.com](mailto:alice@example.com) | 2024-01-10     |
+| 2        | Bob Smith     | [bob@example.com](mailto:bob@example.com)     | 2024-02-15     |
+
 
 ✅ Loans
-LoanID	BookID	MemberID	LoanDate	ReturnDate
-101	1	1	2025-06-01	NULL
-102	2	2	2025-06-02	2025-06-15
+| LoanID | BookID | MemberID | LoanDate   | ReturnDate |
+| ------ | ------ | -------- | ---------- | ---------- |
+| 101    | 1      | 1        | 2025-06-01 | NULL       |
+| 102    | 2      | 2        | 2025-06-02 | 2025-06-15 |
+
